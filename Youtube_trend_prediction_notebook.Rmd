@@ -1,14 +1,16 @@
 ---
 title: "R Notebook"
 output:
-  html_document:
-    toc: yes
-  '#html_preview': default
-  html_notebook:
-    toc: yes
-  pdf_document:
-    highlight: tango
-    toc: yes
+      html_document:
+           keep_md: true
+  #html_document:
+  #  toc: yes
+  #html_preview
+  #html_notebook:
+  #  toc: yes
+ # pdf_document:
+  #  highlight: tango
+   # toc: yes
 ---
 
 ```{r}
