@@ -1,10 +1,14 @@
 ---
 title: "R Notebook"
-output: 
-       github_document: default
-       html_preview: false
-      # html_notebook: default
-  
+output:
+  html_document:
+    toc: yes
+  '#html_preview': default
+  html_notebook:
+    toc: yes
+  pdf_document:
+    highlight: tango
+    toc: yes
 ---
 
 ```{r}
