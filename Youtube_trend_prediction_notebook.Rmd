@@ -2,6 +2,7 @@
 title: "R Notebook"
 output: 
        github_document: default
+       html_preview: false
       # html_notebook: default
   
 ---
@@ -15,6 +16,19 @@ category_name=read.table("/Users/hoora/Documents/Interview/Data_Incubator/Semifi
 ```
 
 ```{r}
+# survaival days
+
+a <- table(video_id)
+survaival = array(1:dim(inputfile)[1]) 
+id_d = array(1:dim(inputfile)[1])
+id = character(dim(inputfile)[1])
+
+for (i in 1:dim(inputfile)[1]) {
+  survaival[i]=a[names(a)==video_id[i]]
+  id_d[i] <- category_id[i]
+  id[i] <- as.character(category_name$V3[category_name$V1 == category_id[i]] )
+} 
+
 # Category histogram
 library(plotly)
 
