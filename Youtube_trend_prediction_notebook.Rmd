@@ -1,8 +1,9 @@
 ---
 title: "R Notebook"
-output:
-  html_notebook: default
-  pdf_document: default
+output: 
+       github_document: default
+      # html_notebook: default
+  
 ---
 
 ```{r}
@@ -15,6 +16,8 @@ category_name=read.table("/Users/hoora/Documents/Interview/Data_Incubator/Semifi
 
 ```{r}
 # Category histogram
+library(plotly)
+
 b <- table(id)
 plot_ly( x = ~names(b), y = ~b, type = 'bar')
 
